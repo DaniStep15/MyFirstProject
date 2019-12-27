@@ -1,0 +1,125 @@
+img{
+   max-width: 100%;
+}
+
+
+body {
+    background-image: url(Img/Background.jpg);
+    /* background-repeat: repeat-x; */
+
+}
+
+.back1 {
+    padding-top: 40px;
+}
+
+#new_note{
+    max-width: 500px;
+    height: 150px;
+    background: url(Img/formbg.jpg);
+    font-family: 'Chilanka', cursive;
+    font-size: 25px;
+}
+
+#input-date{
+    max-width: 180px;
+}
+#input-time{
+    max-width: 180px;
+}
+
+label{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.main-data {
+    /* overflow: overlay; */
+     position: relative; 
+    margin: 15px;
+    float: left;
+     padding: 8px 10px ; 
+    width: 170px;
+    height: 250px;
+    transform: rotate(-4deg);
+   
+    word-break: break-word;
+ background: url(Img/notebg.png); 
+
+
+ -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+ transition: width 1s, height 1s, transform 1s;
+ 
+}
+  
+
+span {
+    font-family: fantasy;
+    color: mediumblue;
+    position: absolute;
+    bottom: 27px;
+    left: 9px;
+    font-size: 14px;
+    /* background-color: blueviolet; */
+} 
+ .row2 {
+    width: max-content;
+    bottom: 27px;
+    left: 100px;
+    /* background-color: chartreuse; */
+   } 
+
+
+.div_text {
+    
+    color: midnightblue;
+    font-family: 'Chilanka', cursive;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 1px;
+    margin-right: 12px;
+    margin-top: 24px;
+    overflow: auto;
+    height: 169px;
+    width: 155px;
+}
+
+/* transition */
+.btn_del {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    margin-top: 10px;
+    margin-right: 3px;
+    background: url(Img//icons8-delete-24.png);
+    position:absolute;
+    right: 0;
+    padding:5px;
+    display:none;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+#note_place:hover .btn_del{
+    display:block;
+    
+}
+
+  .btn_del:hover {
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+  }
+
+  .main-data:hover {
+   
+    -o-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px)
+  }
+
+
+.Time {
+margin-top:150px;
+}

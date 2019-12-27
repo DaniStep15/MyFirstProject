@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn4.iconfinder.com/data/icons/6x16-free-application-icons/16/Paste.png" />
+    
+  </head>
+ <body>
+
+  <div class="container">
+    <!-- Text header-->
+<div class="row">
+  <div class="col-md-12 text-center back1">
+    <img src="Img/text.png" alt="text">
+  </div>
+</div>
+
+<!-- Put your text -->
+<div class="row mt-5 back2">  
+    <div class="col-md-6">
+        <div class="input-group">
+            <textarea onfocus="this.value=''" class="form-control" aria-label="With textarea" placeholder="Put your text..." id="new_note"  maxlength="100"></textarea>
+            <button id="rememberMe" class=" col-md-3 btn btn-success" onclick="addList();">Save</button>
+
+          </div>
+        </div>
+
+        <!-- Date and Time -->
+        <div class="col-md-6" class="Time">
+          <label for="input-date">Date</label>
+          <input type="date"  class="form-control" id="input-date">
+          <label for="input-time">Time</label>
+          <input type="time" class="form-control" id="input-time">
+      </div>
+    </div>
+
+    <!-- Output From textArea and time/date input  -->
+  <div class="row"></div>
+  <div id="note_place">
+    
+  </div>
+  </div>
+
+    <script src="js.js"></script>
+
+  </body>
+</html>
